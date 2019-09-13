@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag aws-cdk:$(date +%s) --tag aws-cdk:latest
+      run: docker build . --file Dockerfile --tag thestuhrer/aws-cdk:$(date +%s) --tag thestuhrer/aws-cdk:latest
     - name: Publish the Docker image
       run: docker push thestuhrer/aws-cdk:latest
     - name: Publish the Docker image
