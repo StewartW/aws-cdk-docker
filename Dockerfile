@@ -12,7 +12,7 @@ RUN apk -U --no-cache add \
     git \
     nodejs=10.16.3-r0 \
     npm=10.16.3-r0 \
-    perl=5.30.0-r0 &&\
+    perl=5.28.2-r1 &&\
     npm i -g aws-cdk@v1.8.0 &&\
     pip3 install -r cdk-packages.txt &&\
     rm -rf /var/cache/apk/*
