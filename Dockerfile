@@ -15,7 +15,7 @@ RUN apk -U --no-cache add \
     perl=5.28.2-r1 &&\
     npm i -g aws-cdk@v1.8.0 &&\
     pip3 install -r cdk-packages.txt &&\
-    pip3 install awscli
+    pip3 install awscli &&\
     rm -rf /var/cache/apk/*
 
 ENTRYPOINT ["entrypoint.sh"]
