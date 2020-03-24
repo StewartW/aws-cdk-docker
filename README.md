@@ -1,2 +1,3 @@
 # aws-cdk-docker
-docker image for running cdk 
+Handy Docker image for running AWS CDK in CodeBuild Projects. 
+Geared towards running Python CDK Apps. 
