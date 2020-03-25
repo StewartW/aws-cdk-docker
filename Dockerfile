@@ -12,6 +12,8 @@ RUN apk -U --no-cache add \
     git \
     nodejs \
     npm \
+    gcc \
+    musl-dev \
     perl=5.28.2-r1 &&\
     npm i -g aws-cdk@v1.26.0 &&\
     pip3 install -r cdk-packages.txt &&\
@@ -19,4 +21,5 @@ RUN apk -U --no-cache add \
     rm -rf /var/cache/apk/*
 
 ENTRYPOINT ["entrypoint.sh"]
+
 
