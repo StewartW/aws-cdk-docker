@@ -15,7 +15,7 @@ RUN apk -U --no-cache add \
     gcc \
     musl-dev \
     perl=5.28.2-r1 &&\
-    npm i -g aws-cdk@v1.26.0 &&\
+    npm i -g aws-cdk &&\
     pip3 install -r cdk-packages.txt &&\
     pip3 install awscli &&\
     rm -rf /var/cache/apk/*
