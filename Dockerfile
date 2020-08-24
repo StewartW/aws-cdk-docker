@@ -1,25 +1,24 @@
-FROM python:3.7.4-alpine3.10
+FROM amazonlinux
 
 RUN mkdir /cdk
 
-COPY ./cdk-packages.txt /cdk/
+COPY ./requirements.txt /cdk/
 COPY ./entrypoint.sh /usr/local/bin/
 
 WORKDIR /cdk
-
-RUN apk -U --no-cache add \
-    bash \
+RUN curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - &&\
+    yum -y install \
+    python3 \
     git \
     nodejs \
     npm \
     gcc \
     musl-dev \
     perl=5.28.2-r1 &&\
-    npm i -g aws-cdk@v1.26.0 &&\
-    pip3 install -r cdk-packages.txt &&\
-    pip3 install awscli &&\
-    rm -rf /var/cache/apk/*
+    npm i -g aws-cdk &&\
+    ln -s /usr/bin/pip3 /usr/bin/pip &&\
+    pip install -r requirements.txt &&\
+    pip install awscli &&\
+    rm -rf /var/cache/yum/*
 
 ENTRYPOINT ["entrypoint.sh"]
-
-
