@@ -2,7 +2,7 @@ FROM python:3.7.4-alpine3.10
 
 RUN mkdir /cdk
 
-COPY ./cdk-packages.txt /cdk/
+COPY ./requirements.txt /cdk/
 COPY ./entrypoint.sh /usr/local/bin/
 
 WORKDIR /cdk
