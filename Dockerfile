@@ -13,7 +13,7 @@ RUN apk -U --no-cache add \
     nodejs \
     npm \
     gcc \
-    musl-dev \
+    musl-dev &&\
     npm i -g aws-cdk &&\
     pip3 install -r requirements.txt &&\
     pip3 install awscli &&\
