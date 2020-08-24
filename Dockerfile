@@ -13,12 +13,12 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - &&\
     nodejs \
     npm \
     gcc \
-    musl-dev \
-    perl=5.28.2-r1 &&\
+    musl-dev &&\
     npm i -g aws-cdk &&\
     ln -s /usr/bin/pip3 /usr/bin/pip &&\
     pip install -r requirements.txt &&\
     pip install awscli &&\
     rm -rf /var/cache/yum/*
+
 
 ENTRYPOINT ["entrypoint.sh"]
