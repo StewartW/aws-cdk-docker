@@ -9,6 +9,7 @@ WORKDIR /cdk
 RUN curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - &&\
     yum -y install \
     python3 \
+    python3-devel \
     git \
     nodejs \
     npm \
@@ -19,6 +20,5 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - &&\
     pip install -r requirements.txt &&\
     pip install awscli &&\
     rm -rf /var/cache/yum/*
-
 
 ENTRYPOINT ["entrypoint.sh"]
