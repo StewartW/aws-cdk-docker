@@ -8,6 +8,7 @@ COPY ./entrypoint.sh /usr/local/bin/
 WORKDIR /cdk
 RUN curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - &&\
     yum -y install \
+    unzip \
     python3 \
     python3-devel \
     git \
