@@ -15,6 +15,7 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - &&\
     nodejs \
     npm \
     gcc \
+    docker \
     musl-dev &&\
     npm i -g aws-cdk &&\
     ln -s /usr/bin/pip3 /usr/bin/pip &&\
