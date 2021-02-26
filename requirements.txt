@@ -21,7 +21,7 @@ aws-cdk.aws-chatbot==v1.88.0
 aws-cdk.aws-cloud9==v1.88.0
 aws-cdk.aws-cloudformation==v1.88.0
 aws-cdk.aws-cloudfront==v1.88.0
-aws_cdk.aws_cloudfront_origin==v1.
+aws_cdk.aws_cloudfront_origin==v1.88.0
 aws-cdk.aws-cloudtrail==v1.88.0
 aws-cdk.aws-cloudwatch==v1.88.0
 aws-cdk.aws-cloudwatch-actions==v1.88.0
