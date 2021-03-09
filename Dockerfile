@@ -21,7 +21,6 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - &&\
     ln -s /usr/bin/pip3 /usr/bin/pip &&\
     pip install -r requirements.txt &&\
     pip install awscli >=1.18.140 &&\
-    pip install docker==4.4.4 &&\
     rm -rf /var/cache/yum/*
 
 ENTRYPOINT ["entrypoint.sh"]
