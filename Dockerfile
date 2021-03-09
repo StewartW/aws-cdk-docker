@@ -1,4 +1,4 @@
-FROM amazonlinux
+FROM jsii/superchain
 
 RUN mkdir /cdk
 
