@@ -1,4 +1,4 @@
-FROM jsii/superchain
+FROM aws/codebuild/standard:5.0
 
 RUN mkdir /cdk
 
