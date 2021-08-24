@@ -37,8 +37,8 @@ jobs:
         ECR_REPOSITORY: aws-cdk
         IMAGE_TAG: ${{ steps.branch_name.outputs.SOURCE_TAG }}
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker build -t public.ecr.aws/p8j5c2q4/cdk-docker:$IMAGE_TAG .
+        docker push public.ecr.aws/p8j5c2q4/cdk-docker:$IMAGE_TAG
 
     - name: Build, tag, and push image to Amazon ECR
       env:
@@ -46,8 +46,8 @@ jobs:
         ECR_REPOSITORY: aws-cdk
         IMAGE_TAG: V${{ steps.branch_name.outputs.SOURCE_TAG }}
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG   
+        docker build -t public.ecr.aws/p8j5c2q4/cdk-docker:$IMAGE_TAG .
+        docker push public.ecr.aws/p8j5c2q4/cdk-docker:$IMAGE_TAG   
         
     - name: Build, tag, and push image to Amazon ECR
       env:
@@ -55,6 +55,6 @@ jobs:
         ECR_REPOSITORY: aws-cdk
         IMAGE_TAG: latest
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG           
+        docker build -t public.ecr.aws/p8j5c2q4/cdk-docker:$IMAGE_TAG .
+        docker push public.ecr.aws/p8j5c2q4/cdk-docker:$IMAGE_TAG           
 
