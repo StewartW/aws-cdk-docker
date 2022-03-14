@@ -8,3 +8,5 @@ thestuhrer/aws-cdk
 
 latest: Based off master 
 vx.y.z: Image with version x.y.z of the AWS CDK available
+
+Now using AWS CodeBuild
