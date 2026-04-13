@@ -30,7 +30,7 @@ aws-cdk.aws-codecommit==v1.88.0
 aws-cdk.aws-codedeploy==v1.88.0
 aws-cdk.aws-codepipeline==v1.88.0
 aws-cdk.aws-codepipeline-actions==v1.88.0
-aws-cdk.aws-codestar==v1.88.0
+aws-cdk.aws-codestar==v1.204.0
 aws-cdk.aws-cognito==v1.88.0
 aws-cdk.aws-config==v1.88.0
 aws-cdk.aws-datapipeline==v1.88.0
