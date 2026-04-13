@@ -110,7 +110,7 @@ aws-cdk.aws-servicediscovery==v1.88.0
 aws-cdk.aws-ses==v1.88.0
 aws-cdk.aws-sns==v1.88.0
 aws-cdk.aws-sns-subscriptions==v1.88.0
-aws-cdk.aws-sqs==v1.88.0
+aws-cdk.aws-sqs==v1.204.0
 aws-cdk.aws-ssm==v1.88.0
 aws-cdk.aws-stepfunctions==v1.88.0
 aws-cdk.aws-stepfunctions-tasks==v1.88.0
