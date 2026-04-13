@@ -54,7 +54,7 @@ aws-cdk.aws-elasticloadbalancing==v1.88.0
 aws-cdk.aws-elasticloadbalancingv2==v1.88.0
 aws-cdk.aws-elasticloadbalancingv2-targets==v1.88.0
 aws-cdk.aws-elasticsearch==v1.88.0
-aws-cdk.aws-emr==v1.88.0
+aws-cdk.aws-emr==v1.204.0
 aws-cdk.aws-events==v1.88.0
 aws-cdk.aws-events-targets==v1.88.0
 aws-cdk.aws-fsx==v1.88.0
